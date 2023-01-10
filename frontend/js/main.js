@@ -86,7 +86,6 @@ class Page {
                         page.pageLoad('felhasznalo');
                     } 
                 }
-            
             }
 
             if (element.id == 'footer-products') {
@@ -101,7 +100,6 @@ class Page {
                 }
             }   
         });
-
     }
 
     drawMenuBg = () => {
@@ -130,7 +128,6 @@ class Page {
                     "userinfo": userData.response_data.userinfo
                 });
 
-                // save User Datas in local variable
                 localStorage.setItem('userdata', userDataLocal);
 
                 if (userForms) {
@@ -148,9 +145,7 @@ class Page {
     pageLoad = (inc) => {
 
         inc = inc.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
         sessionStorage.setItem('inc', inc);
-
         this.drawMenuBg();
 
         if (localStorage.getItem('login')) {
@@ -175,9 +170,7 @@ class Page {
     getBrowserVariables = () => {
         
         !sessionStorage.getItem('inc') ? sessionStorage.setItem('inc', 'bemutatkozas') : false;
-
         !localStorage.getItem('darkModeSwitch') ? localStorage.setItem('darkModeSwitch', 'on') : false;
-
         localStorage.setItem('basket', null);
         
         sessionStorage.setItem('filter-stlye', 0);
@@ -331,6 +324,7 @@ class Page {
     }
 
     lengthCheck = (text, value, min, max, oneLength) => {
+
         if (value=='' && text != 'userinfo') {
             throw '<li>A(z) '+text+' mező üres!</li>';
         }
@@ -635,9 +629,7 @@ class UserForms {
 
     userMod = (key, value, min, max) => {
         let modMsg = '';
-
         let userData = JSON.parse(localStorage.getItem('userdata'));
-
 
         try {
             page.lengthCheck(key, value, min, max);
