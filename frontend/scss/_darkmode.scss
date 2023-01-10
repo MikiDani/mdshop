@@ -76,6 +76,20 @@
         }
     }
 
+    .home-text-link {
+        font-family: $font01;
+        color: $color-primary;
+        font-weight: 500 !important;
+
+        & a {
+            @if $mode == dark { color: $color-third; }
+            @if $mode == light { color: #1d97b2; }
+        }
+        & a:hover {
+            font-weight: 600;
+        }
+    }
+
     // product page options
     .product-div {
         background-color: $bg-primary;

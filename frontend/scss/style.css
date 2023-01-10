@@ -70,6 +70,17 @@
   font-weight: 600;
   color: #ffa500;
 }
+.dark-mode .home-text-link {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-weight: 500 !important;
+}
+.dark-mode .home-text-link a {
+  color: #5fa7d1;
+}
+.dark-mode .home-text-link a:hover {
+  font-weight: 600;
+}
 .dark-mode .product-div {
   background-color: rgba(3, 3, 3, 0.9725490196);
   border-radius: 0.5rem;
@@ -155,6 +166,17 @@
 .light-mode .footer-text-link:active {
   font-weight: 600;
   color: #0088ff;
+}
+.light-mode .home-text-link {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  font-weight: 500 !important;
+}
+.light-mode .home-text-link a {
+  color: #1d97b2;
+}
+.light-mode .home-text-link a:hover {
+  font-weight: 600;
 }
 .light-mode .product-div {
   background-color: #fff;
