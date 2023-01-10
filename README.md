@@ -6,7 +6,7 @@ MD-Shop technikai felépítése: [https://github.com/MikiDani/mdshop/blob/master
 SQL adatbázis: [https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_sql.zip](https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_sql.zip)<br><br>
 A tesztelés megkönnyítése érdekében feltöltöttem egy ideiglenes tárhelyre ahol tesztelhető:<br><br>
 Landing page: [http://web.mikidani.probaljaki.hu/mdshop/index.html](http://web.mikidani.probaljaki.hu/mdshop/index.html)<br>
-Frontend oldal: [http://web.mikidani.probaljaki.hu/mdshop/frontend/index.html](http://web.mikidani.probaljaki.hu/mdshop/frontend/index.html)<br>
+Frontend rész: [http://web.mikidani.probaljaki.hu/mdshop/frontend/index.html](http://web.mikidani.probaljaki.hu/mdshop/frontend/index.html)<br>
 ADMIN rész: [http://web.mikidani.probaljaki.hu/mdshop/backend/index.php](http://web.mikidani.probaljaki.hu/mdshop/backend/index.php)<br>
 REST API: [http://web.mikidani.probaljaki.hu/mdshop/api/api.php](http://web.mikidani.probaljaki.hu/mdshop/api/api.php)<br><br>
 Az oldalnak három fő részre bontható. REST API rész, ADMIN rész, FRONTEND rész. Az adatok MYSQL adatbázisban vannak tárolva. A REST API kommunikál az adatbázissal. A FRONTEND és az ADMIN az API-n keresztül éri el az adatbázist. Az API és ADMIN felületet PHP-ban, a FRONTEND felület pedig javascript nyelven van megírva. Az oldal az ADMIN és FRONTEND felület reszponzív megjelenítéséhez Bootstrap keretrendszert használ.
