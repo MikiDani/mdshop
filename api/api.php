@@ -63,5 +63,4 @@ header("Access-Control-Allow-Headers: *");
 header("Content-Type:application/json");
 
 if ($data) { echo json_encode($data); }
-
 ?>

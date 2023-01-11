@@ -14,7 +14,7 @@ Az oldalnak három fő részre bontható. REST API rész, ADMIN rész, FRONTEND 
 ## Frontend rész:
 
 ### Bemutatkozás menüpont:
-Itt a vizsgamunkával kapcsolatos információkat lehet megtalálni. A dokumentációkhoz linkeket találunk.
+Itt a vizsga munkával kapcsolatos információkat lehet megtalálni. A dokumentációkhoz linkeket találunk.
 
 ### Felhasználó menüpont:
 A felhasználó menüpontban tudunk regisztrálni, vagy ha már regisztráltunk akkor belépni a profilunkhoz a frontend oldalon. Itt két felhasználó már regisztrálva van a könnyebb tesztelhetőség érdekében.
@@ -58,7 +58,7 @@ A kedvencek ikonja bejelentkezés esetén a fejlécben folyamatosan megtalálhat
 - Ha van kedvenc termékünk a listában akkor sárgán kitöltött szivecske jelenik meg.
 A kedvencek listából egyenként törölhetőek a kedvencek.
 ### Elérhetőség menüpont:
-Az elérhetőség menüpontban megtalálhatóak az elérhetőségeim. Ez alatt van egy email küldési lehetőség ami a mdshop@mikidani.probaljaki.hu levélcímre küld üzenetet. A dokumetációban megtalálhatjuk az elérhetőségeit.
+Az elérhetőség menüpontban megtalálhatóak az elérhetőségeim. Ez alatt van egy email küldési lehetőség ami a mdshop@mikidani.probaljaki.hu levélcímre küld üzenetet. A dokumentációban megtalálhatjuk az elérhetőségeit.
 
 ## ADMIN rész:
 

@@ -68,6 +68,10 @@ a.nav-link {
     color: white;
 }
 
+.text-id {
+    font-size: 0.8rem;
+}
+
 .red-bg {
     background-color: #c21616 !important;
 }

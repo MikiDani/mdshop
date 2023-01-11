@@ -1,9 +1,6 @@
 <?php
+define('URL', 'http://localhost/md-shop/api/api.php');
 
-//define('URL', 'http://localhost/md-shop/api/api.php');
-define('URL', 'http://web.mikidani.probaljaki.hu/mdshop/api/api.php');
-
-// API load
 function sendApi($method, $request, $data) {
 
     $headers = array(
@@ -27,7 +24,6 @@ function sendApi($method, $request, $data) {
     return $response;
 }
 
-// API management
 function apiResultProcessing($status_code, $response_data) {
     if ($status_code !== 401) { return $response_data; }
     unauthorized();
@@ -104,7 +100,6 @@ function uploadFile ($filename, $directory, $filesize, $extensions, $upname, $ne
         $upload_message = "Nem megfelelő file formátum! Csak $extensionTextList kiterjesztések megengedettek.";
     }
 
-    // upload
     if ($upload == true) {
 
         $ext = explode(".", $_FILES[$filename]["name"]);
@@ -117,7 +112,7 @@ function uploadFile ($filename, $directory, $filesize, $extensions, $upname, $ne
         if (move_uploaded_file($_FILES[$filename]["tmp_name"], $fileWay)) {
             $upload = true;
             $upload_message = "Sikeres file feltöltés.";
-            // small file upload
+
             if ($needSmallFile) {
                 
                 $maxDimW = 200;

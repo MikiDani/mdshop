@@ -13,11 +13,9 @@
             if ($this->actionName=="userdelete") { $this->userDelete(); return; }
             if ($this->actionName=="favorites") { $this->userFavorite(); return; }
 
-            $this->data = ["response_data" => "Hibás kérés!", "status_code" => 400];
-            
+            $this->data = ["response_data" => "Hibás kérés!", "status_code" => 400];   
         }
 
-        // REGISTRATION
         public function registration() {            
             if (isset($this->inData->username) && isset($this->inData->email) && isset($this->inData->password)) {
 
@@ -77,7 +75,6 @@
             
         }
         
-        // BEJELENTKEZÉS
         public function login() {
             if (isset($this->inData->usernameoremail) && isset($this->inData->password)) {
                 if ($this->loginInputsCheck($this->inData->usernameoremail, $this->inData->password)) {
