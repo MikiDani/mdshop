@@ -1,15 +1,12 @@
 
 @mixin createMode ($bg-primary, $bg-secondary, $bg-third, $color-primary, $color-secondary, $color-third, $footer-bg, $mode) {
 
-    //basic color options
-
     background-color: $bg-primary;
     color: $color-primary;
 
     .page {
         padding: 0;
         background-color: $bg-secondary;
-        //min-height: 100vh;
     }
 
     .th-color1 { color:$color-primary; }
@@ -90,7 +87,6 @@
         }
     }
 
-    // product page options
     .product-div {
         background-color: $bg-primary;
         border-radius: 0.5rem;

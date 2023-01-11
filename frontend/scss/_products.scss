@@ -8,7 +8,6 @@
     grid-template-columns: auto auto auto;
     column-gap: 1rem;
     row-gap: 1rem;
-    //background-color: blue;
 }
 
 .products-gridbox-message {
@@ -21,7 +20,6 @@
 #products-selected {
     font-family: $font01;
     border-radius: 1rem;
-    //background-color: #fffe;
 }
 
 .product-div {
@@ -57,7 +55,6 @@
     }
 
     &:hover > span {
-        // kosár button megjelenítése
         opacity: 1;
     }
 
@@ -81,7 +78,6 @@
     }
     
     & > span {
-        // kosár button elrejtése
         opacity: 0;
     }
 }
@@ -129,8 +125,6 @@
     }
 }
 
-// filter Design
-
 $fPad: 0.2rem;
 $fHei: 2rem;
 
@@ -150,7 +144,6 @@ $fHei: 2rem;
 .filter-label-range {
     display: inline-block;
     vertical-align: middle;
-    //background-color: deeppink;
     vertical-align:top;
     font-weight: 600;
     font-size: 0.9rem;
@@ -195,8 +188,6 @@ $fHei: 2rem;
     border-radius: 0.5rem;
     background-color: $page-orange;
 }
-
-// SELECTED PRODUCT :
 
 #product-select-markdown {
     $mdr: 5rem;
@@ -248,7 +239,6 @@ $fHei: 2rem;
     background-image: url("../img/icons/basket-favorite.svg");
     
     &:hover {
-        //background-image: url("../img/icons/basket-favorite3.svg");
         background-size: 100% 100%;
     }
 
@@ -436,14 +426,12 @@ $bmbr2: 4rem;
 
 #p-markdownprice-value {
     font-weight: bold;
-    //text-shadow: $page-orange 3px 0px;
     color:white;
 }
 
-// pictures lista
 #prod-pictures-container {
     display: grid;
-    grid-template-columns: auto; // js manipulálja
+    grid-template-columns: auto;
 }
 
 .prod-pic-div {
@@ -473,7 +461,6 @@ $bmbr2: 4rem;
     border-radius: 0.5rem;
 }
 
-// NAGY PIC
 .blackBox {
     display: none;
     flex-wrap: wrap;
@@ -514,7 +501,6 @@ $bmbr2: 4rem;
     display: block;
 }
 
-// MEDIA
 @media (max-width: 380px) {
     #products-gridbox {
         grid-template-columns: auto auto;
