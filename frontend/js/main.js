@@ -565,8 +565,10 @@ class UserForms {
                         this.regEmail.value = '';
                         this.regPwd1.value = '';
                         this.regPwd2.value = '';
+                        this.regMessage.innerHTML =  '<ul class="text-success">'+data.response_data+'</ul>';
+                    } else {
+                        this.regMessage.innerHTML =  '<ul class="text-danger">'+data.response_data+'</ul>';
                     }
-                    this.regMessage.innerHTML =  '<ul class="text-success">'+data.response_data+'</ul>';
                     this.regMessage.scrollIntoView();
                 }
             });
@@ -666,10 +668,9 @@ class UserForms {
             api('post', '?user=usermod', sendApidata)
             .then((data) => {
                 if (!(data.status_code == 401)) {
-
+                    let respText = (data.status_code == 200 || data.status_code == 201) ? '<ul class="text-success">'+data.response_data+'</ul>' : '<ul class="text-danger">'+data.response_data+'</ul>'; 
                     page.loadUserDatas(localStorage.getItem('login'));
-
-                    this.usrMessage.innerHTML = data.response_data;
+                    this.usrMessage.innerHTML = respText;
                     this.usrMessage.scrollIntoView();
                 } else {
                     this.logOut();
@@ -686,7 +687,7 @@ class UserForms {
         let pwdModMsg = '';
         if (mod == 'del') {
             try {
-                page.lengthCheck('jelszó', pwd, 6, 20);
+                page.lengthCheck('jelszó', pwd, 6, 50);
             }
             catch (error) {
                 pwdModMsg += '<li>'+error+'</li>';
@@ -717,19 +718,19 @@ class UserForms {
 
         if (mod == 'mod') {
             try {
-                page.lengthCheck('jelszó', pwd, 6, 20);
+                page.lengthCheck('jelszó', pwd, 6, 50);
             }
             catch (error) {
                 pwdModMsg += '<li>'+error+'</li>';
             }
             try {
-                page.lengthCheck('Új jelszó', pwdNew, 6, 20);
+                page.lengthCheck('Új jelszó', pwdNew, 6, 50);
             }
             catch (error) {
                 pwdModMsg += '<li>'+error+'</li>';
             }
             try {
-                page.lengthCheck('Jelszó mégegyszer', pwdNew2, 6, 20);
+                page.lengthCheck('Jelszó mégegyszer', pwdNew2, 6, 50);
             }
             catch (error) {
                 pwdModMsg += '<li>'+error+'</li>';

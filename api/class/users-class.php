@@ -13,7 +13,7 @@
             if ($this->actionName=="userdelete") { $this->userDelete(); return; }
             if ($this->actionName=="favorites") { $this->userFavorite(); return; }
 
-            $this->data = ["response_data" => "Hibás kérés!", "status_code" => 400];   
+            $this->data = ["response_data" => "Hibás kérés!", "status_code" => 400];
         }
 
         public function registration() {            
@@ -30,7 +30,7 @@
                 }
 
                 try {
-                    $this->textLong('email', $this->inData->email, 6, 20);
+                    $this->textLong('email', $this->inData->email, 6, 50);
                     $this->isEmailUsed($this->inData->email);
                 }
                 catch (Exception $error) {
@@ -44,11 +44,9 @@
                     $errorMsg .= $error->getMessage();
                 }
                 
-                // ha minden ok
                 if ($errorMsg == "") {
                     
                     $stmt = $this->conn->prepare("INSERT INTO users (username, email, password) VALUES (?,?,?)");
-                    
                     $codePassword = hash('sha512', $this->inData->password);
                     
                     $stmt->bindParam(1, $this->inData->username);
@@ -153,7 +151,7 @@
                         
                         $errorMsg="";
                         try {
-                            $this->textLong($inputKey, $inputValue, 6, 20);
+                            $this->textLong($inputKey, $inputValue, 6, 50);
                             $this->isEmailUsed($inputValue);
                         }
                         catch (Exception $error) {

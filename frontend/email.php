@@ -1,4 +1,6 @@
 <?php
+require "../backend/connect.php";
+
 require "PHPMailer/Exception.php";
 require "PHPMailer/PHPMailer.php";
 require "PHPMailer/SMTP.php";
@@ -28,7 +30,7 @@ if ($allOk) {
         $mail->Host = 'mail.nethely.hu';
         $mail->SMTPAuth = true;
         $mail->Username = $toMe;
-        $mail->Password = 'X6RgzCXb';
+        $mail->Password = EMAILPASS;
         $mail->Port = 1025;
         
         $mail->setFrom($toMe, 'Üzenet a weboldalról:');
