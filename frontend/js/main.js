@@ -753,12 +753,14 @@ class UserForms {
                 api('post', '?user=usermod', sendApidata)
                 .then((data) => {
                     if (!(data.status_code == 401)) {
-                        this.usrMessage.innerHTML = data.response_data;
                         this.usrMessage.scrollIntoView();
                         if (data.status_code == 200) {
+                            this.usrMessage.innerHTML = '<ul class="text-success">'+data.response_data+'</ul>';
                             this.usrPwd.value = '';
                             this.usrNewPwd.value = '';
                             this.usrNewPwd2.value = '';
+                        } else {
+                            this.usrMessage.innerHTML = '<ul class="text-danger">'+data.response_data+'</ul>';
                         }
                     } else {
                         this.logOut();
