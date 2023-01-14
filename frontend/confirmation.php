@@ -21,7 +21,7 @@ if ($allOk) {
     $to = $_POST['useremail'];
 
     $senderName = "MD-Shop";
-    $senderAddress = "mdshop@mikidani.probaljaki.hu";
+    $senderAddress = "info.mdshop@mikidani.probaljaki.hu";
 
     try {
         $mail->isSMTP();

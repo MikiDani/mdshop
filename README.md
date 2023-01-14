@@ -3,7 +3,7 @@
 Miklós Dániel vagyok. Vizsgamunkának egy webshopot készítettem. Az oldal dokumentációi és a felhasznált adatbázis itt elérhető:<br><br>
 MD-Shop dokumentáció: [https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_dokumentacio.pdf](https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_dokumentacio.pdf)<br>
 MD-Shop technikai felépítése: [https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_felepitese.pdf](https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_felepitese.pdf)<br>
-SQL adatbázis: [https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_sql.zip](https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop_sql.zip)<br><br>
+SQL adatbázis: [https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop.sql](https://github.com/MikiDani/mdshop/blob/master/documentation/mdshop.sql)<br><br>
 A tesztelés megkönnyítése érdekében feltöltöttem egy ideiglenes tárhelyre ahol tesztelhető:<br><br>
 Landing page: [http://web.mikidani.probaljaki.hu/mdshop/index.html](http://web.mikidani.probaljaki.hu/mdshop/index.html)<br>
 Frontend rész: [http://web.mikidani.probaljaki.hu/mdshop/frontend/index.html](http://web.mikidani.probaljaki.hu/mdshop/frontend/index.html)<br>
